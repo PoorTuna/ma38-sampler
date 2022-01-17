@@ -11,11 +11,17 @@ public class FileLimiter {
         isOverLimit();
     }
 
-    public void isOverLimit() {
+    public boolean isOverLimit() {
         if (FILECOUNT >= FILELIMITER) {
             FILECOUNT = 0;
             FILEINDEX++;
+            return true;
         }
+        return false;
+    }
+
+    public int getFILECOUNT(){
+        return FILECOUNT;
     }
 
 
