@@ -4,5 +4,4 @@ public class SamplerException extends Exception{
     public SamplerException (String str) {
         super(str);
     }
-
 }
