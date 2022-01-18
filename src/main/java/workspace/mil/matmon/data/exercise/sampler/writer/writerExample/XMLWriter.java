@@ -17,7 +17,8 @@ public class XMLWriter extends Writer {
 
     /**
      * This function Writes into separate xml files the mapped content.
-     * @param path : the path where the files will be created
+     *
+     * @param path            : the path where the files will be created
      * @param mappingIterator : the mapped content to be written into the xml files.
      * @throws SamplerWriterErrorException
      */
@@ -42,7 +43,6 @@ public class XMLWriter extends Writer {
             throw new SamplerWriterErrorException();
         }
     }
-
 
     @Override
     public void write(String path) {
