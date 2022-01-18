@@ -2,7 +2,6 @@ package workspace.mil.matmon.data.exercise.sampler.parser;
 
 import com.opencsv.exceptions.CsvValidationException;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 
