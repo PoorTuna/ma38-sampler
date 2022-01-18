@@ -20,7 +20,6 @@ public class JSONWriter extends Writer {
     public void write(String path, MappingIterator<Map<?, ?>> mappingIterator) throws SamplerWriterErrorException {
         try {
             FileLimiter fileLimiter = new FileLimiter();
-            FileWriter fileWriter = new FileWriter(path + FileLimiter.FILEINDEX + ".json");
             File input = new File(path + FileLimiter.FILEINDEX + ".json");
             ObjectMapper objectMapper = new ObjectMapper();
 
