@@ -26,8 +26,8 @@ public class CsvJsonConverter {
             MappingIterator<Map<?, ?>> mappingIterator = csvMapper.reader().forType(Map.class).with(csv).readValues(new File(src));
             List<Map<?, ?>> temp = new ArrayList<>();
 
-            for (MappingIterator<Map<?, ?>> it = mappingIterator; it.hasNext(); ) {
-                Map<?, ?> obj = it.next();
+            while (mappingIterator.hasNext()) {
+                Map<?, ?> obj = mappingIterator.next();
                 temp.add(obj);
                 if (fileLimiter.isOverLimit()) {
                     objectMapper.writeValue(input, temp);
