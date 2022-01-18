@@ -16,6 +16,13 @@ import java.util.Map;
 
 public class JsonWriter extends Writer {
 
+
+    /**
+     * This function Writes into separate json files the mapped content.
+     * @param path : the path where the files will be created
+     * @param mappingIterator : the mapped content to be written into the json files.
+     * @throws SamplerWriterErrorException
+     */
     public void write(String path, MappingIterator<Map<?, ?>> mappingIterator) throws SamplerWriterErrorException {
         try {
             FileLimiter fileLimiter = new FileLimiter();

@@ -11,6 +11,11 @@ public class FileLimiter {
         isOverLimit();
     }
 
+    /**
+     * This function returns true if FILECOUNT is equal/bigger than FILELIMITER, else false.
+     * @return true : FILECOUNT >= FILELIMITER
+     * @return false: FILECOUNT < FILELIMITER
+     */
     public boolean isOverLimit() {
         if (FILECOUNT >= FILELIMITER) {
             FILECOUNT = 0;

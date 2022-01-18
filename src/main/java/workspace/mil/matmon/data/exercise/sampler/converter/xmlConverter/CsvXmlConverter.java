@@ -12,12 +12,18 @@ import java.util.Map;
 
 public class CsvXmlConverter {
 
-    public MappingIterator<Map<?, ?>> convert(String src) throws SamplerConverterErrorException {
+    /**
+     * This function returns the csv file formatted to mapping iterator, and can be referenced as xml.
+     * @param file : The csv file to be converted
+     * @return MappingIterator<Map?, ?>> : the csv file formatted in a way which can be written to xml files.
+     * @throws SamplerConverterErrorException
+     */
+    public MappingIterator<Map<?, ?>> convert(File file) throws SamplerConverterErrorException {
         try {
             CsvSchema csv = CsvSchema.emptySchema().withHeader();
             CsvMapper csvMapper = new CsvMapper();
 
-            return csvMapper.reader().forType(Map.class).with(csv).readValues(new File(src));
+            return csvMapper.reader().forType(Map.class).with(csv).readValues(file);
         } catch (IOException e) {
             throw new SamplerConverterErrorException();
         }
