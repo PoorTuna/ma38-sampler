@@ -2,16 +2,12 @@ package workspace.mil.matmon.data.exercise.sampler;
 
 import workspace.mil.matmon.data.exercise.sampler.converter.jsonConverter.CsvJsonConverter;
 import workspace.mil.matmon.data.exercise.sampler.converter.xmlConverter.CsvXmlConverter;
-import workspace.mil.matmon.data.exercise.sampler.etl.etl.ETL;
-import workspace.mil.matmon.data.exercise.sampler.etl.etlManager.ETLManager;
 import workspace.mil.matmon.data.exercise.sampler.exceptions.exampleExceptions.converterExceptionExample.SamplerConverterErrorException;
 import workspace.mil.matmon.data.exercise.sampler.exceptions.exampleExceptions.writerExceptionExample.SamplerWriterErrorException;
 import workspace.mil.matmon.data.exercise.sampler.parser.parserExample.CSVParser;
 import workspace.mil.matmon.data.exercise.sampler.parser.parserExample.JsonParser;
 import workspace.mil.matmon.data.exercise.sampler.writer.writerExample.JsonWriter;
 import workspace.mil.matmon.data.exercise.sampler.writer.writerExample.XMLWriter;
-
-import java.util.HashMap;
 
 
 public class Main {
