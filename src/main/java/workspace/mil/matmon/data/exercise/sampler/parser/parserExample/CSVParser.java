@@ -6,7 +6,6 @@ import workspace.mil.matmon.data.exercise.sampler.exceptions.exampleExceptions.p
 import workspace.mil.matmon.data.exercise.sampler.exceptions.exampleExceptions.parserExceptionExample.examples.SamplerFileNotFoundErrorException;
 import workspace.mil.matmon.data.exercise.sampler.parser.Parser;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -23,7 +22,6 @@ public class CSVParser extends Parser {
                 newFile.add(lineInArray);
             }
         } catch (IOException e) {
-
             throw new SamplerFileNotFoundErrorException();
         } catch (CsvValidationException e) {
             throw new SamplerCsvValidationErrorException();
