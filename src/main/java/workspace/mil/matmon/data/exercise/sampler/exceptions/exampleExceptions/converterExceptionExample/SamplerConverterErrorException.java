@@ -8,6 +8,6 @@ public class SamplerConverterErrorException extends SamplerException {
     }
 
     public SamplerConverterErrorException() {
-
+        super();
     }
 }
