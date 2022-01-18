@@ -6,6 +6,7 @@ import workspace.mil.matmon.data.exercise.sampler.etl.etlManager.ETLManager;
 import workspace.mil.matmon.data.exercise.sampler.exceptions.exampleExceptions.converterExceptionExample.SamplerConverterErrorException;
 import workspace.mil.matmon.data.exercise.sampler.exceptions.exampleExceptions.writerExceptionExample.SamplerWriterErrorException;
 import workspace.mil.matmon.data.exercise.sampler.writer.writerExample.JsonWriter;
+import workspace.mil.matmon.data.exercise.sampler.writer.writerExample.XMLWriter;
 
 import java.util.HashMap;
 
@@ -16,7 +17,10 @@ public class Main {
 
         CsvJsonConverter csvJsonConverter = new CsvJsonConverter();
         JsonWriter jsonWriter = new JsonWriter();
-        jsonWriter.write("C:\\Users\\Oren\\Desktop\\Works\\Military\\2021-2022\\matmon\\code\\sampler\\src\\main\\mada_reports\\", csvJsonConverter.convert("C:\\Users\\Oren\\Desktop\\Works\\Military\\2021-2022\\matmon\\code\\sampler\\src\\main\\resources\\MadaReports.csv"));
+        XMLWriter xmlWriter = new XMLWriter();
+
+        //jsonWriter.write("C:\\Users\\Oren\\Desktop\\Works\\Military\\2021-2022\\matmon\\code\\sampler\\src\\main\\mada_reports\\", csvJsonConverter.convert("C:\\Users\\Oren\\Desktop\\Works\\Military\\2021-2022\\matmon\\code\\sampler\\src\\main\\resources\\MadaReports.csv"));
+        xmlWriter.write("C:\\Users\\Oren\\Desktop\\Works\\Military\\2021-2022\\matmon\\code\\sampler\\src\\main\\LABTESTS\\", csvJsonConverter.convert("C:\\Users\\Oren\\Desktop\\Works\\Military\\2021-2022\\matmon\\code\\sampler\\src\\main\\resources\\MadaReports.csv"));
 
     }
 }
