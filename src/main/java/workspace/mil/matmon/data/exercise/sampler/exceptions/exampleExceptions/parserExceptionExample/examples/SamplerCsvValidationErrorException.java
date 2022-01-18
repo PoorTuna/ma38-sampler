@@ -2,12 +2,12 @@ package workspace.mil.matmon.data.exercise.sampler.exceptions.exampleExceptions.
 
 import workspace.mil.matmon.data.exercise.sampler.exceptions.exampleExceptions.parserExceptionExample.SamplerParserErrorException;
 
-public class SamplerFileNotFoundErrorException extends SamplerParserErrorException {
-    public SamplerFileNotFoundErrorException(String str) {
+public class SamplerCsvValidationErrorException extends SamplerParserErrorException {
+    public SamplerCsvValidationErrorException(String str) {
         super(str);
     }
 
-    public SamplerFileNotFoundErrorException() {
+    public SamplerCsvValidationErrorException() {
         super();
     }
 }

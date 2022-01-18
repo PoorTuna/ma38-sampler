@@ -6,4 +6,8 @@ public class SamplerConverterErrorException extends SamplerException {
     public SamplerConverterErrorException(String str) {
         super(str);
     }
+
+    public SamplerConverterErrorException() {
+
+    }
 }

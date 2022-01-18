@@ -6,4 +6,8 @@ public class SamplerWriterErrorException extends SamplerException {
     public SamplerWriterErrorException(String str) {
         super(str);
     }
+
+    public SamplerWriterErrorException() {
+        super();
+    }
 }

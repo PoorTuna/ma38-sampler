@@ -6,4 +6,8 @@ public class SamplerParserErrorException extends SamplerException {
     public SamplerParserErrorException(String str) {
         super(str);
     }
+
+    public SamplerParserErrorException() {
+
+    }
 }

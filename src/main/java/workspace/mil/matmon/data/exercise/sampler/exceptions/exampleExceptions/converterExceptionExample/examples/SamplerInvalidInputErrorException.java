@@ -6,4 +6,8 @@ public class SamplerInvalidInputErrorException extends SamplerConverterErrorExce
     public SamplerInvalidInputErrorException(String str) {
         super(str);
     }
+
+    public SamplerInvalidInputErrorException() {
+        super();
+    }
 }
