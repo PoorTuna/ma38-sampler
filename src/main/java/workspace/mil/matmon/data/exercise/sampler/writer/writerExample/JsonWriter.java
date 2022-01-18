@@ -9,13 +9,12 @@ import workspace.mil.matmon.data.exercise.sampler.exceptions.exampleExceptions.w
 import workspace.mil.matmon.data.exercise.sampler.writer.Writer;
 
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class JSONWriter extends Writer {
+public class JsonWriter extends Writer {
 
     public void write(String path, MappingIterator<Map<?, ?>> mappingIterator) throws SamplerWriterErrorException {
         try {

@@ -11,8 +11,8 @@ import workspace.mil.matmon.data.exercise.sampler.writer.Writer;
 @Data
 public class ETL {
     private Parser parser;
-    private Writer writer;
     private Converter converter;
+    private Writer writer;
 
     public void transformExecute(){
         //this.writer.write(this.converter(this.parser));

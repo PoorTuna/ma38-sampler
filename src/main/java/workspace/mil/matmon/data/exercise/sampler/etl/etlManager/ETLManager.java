@@ -4,11 +4,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import workspace.mil.matmon.data.exercise.sampler.etl.etl.ETL;
 
-import java.util.List;
+import java.util.Map;
 
 @AllArgsConstructor
 @Data
 public class ETLManager {
-    public List<ETL> etlManager;
+    public Map<String, ETL> etlManager;
 
 }
